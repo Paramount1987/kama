@@ -33,24 +33,21 @@ $(document).ready(function(){
 ///////////////////////// scroll
 var heightFront = $(".front-main").height();
 var scrollFront = function(e){
+
 			if(!run.is){
-				if(!scrolled.is){
-						$('html body').animate({scrollTop: heightFront},800,function( ){scrolled.is = true});
-						$(".down-page").fadeOut();	
-						run.is = true;
-				}
-
+				run.is = true;
+				$('html body').animate({scrollTop: heightFront},1000,function(){scrolled.is = true; });
+				$(".down-page").fadeOut();				
 		}
-
 };
 
-$('body').one('mousewheel  touchmvoe',function(e){	
+$('body').on('mousewheel  touchmvoe',function(e){	
+	scrollFront();
 
 	if(!scrolled.is){
 		e.stopPropagation();
 		e.preventDefault();
 	}
-	scrollFront();
 
 });
 	$(".down-page").click(function(){scrollFront();});
