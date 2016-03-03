@@ -1,11 +1,13 @@
 ///nprogress
 NProgress.configure({ showSpinner: false });
 NProgress.start();
+var scrolled = {is: false};
+var run = {is:false}
 
 $(window).load(function(){
-NProgress.done();
-setTimeout("$('#loader-progress').fadeOut()",500);
-setTimeout("document.getElementById('video').play()",600);
+	NProgress.done();
+	setTimeout("$('#loader-progress').fadeOut()",500);
+	setTimeout("document.getElementById('video').play()",600);
 
 });
 
@@ -29,23 +31,24 @@ $(document).ready(function(){
 
   initMap();
 ///////////////////////// scroll
-var scrolled = false;
 var heightFront = $(".front-main").height();
-var scrollFront = function(){
-		if(!scrolled){
-		$('html body').animate({scrollTop: heightFront},1000);
-		scrolled = true;
-		$(".down-page").css('z-index', '7');
-	}
+var scrollFront = function(e){
+			if(!run.is){
+				if(!scrolled.is){
+						$('html body').animate({scrollTop: heightFront},800,function( ){scrolled.is = true});
+						$(".down-page").fadeOut();	
+						run.is = true;
+				}
+
+		}
+
 };
 
-$(document).scroll(function(){	
-	var topLogo = $('.logo-wrap').offset();
-	var scrollTop = $('body').scrollTop();
-	if(scrollTop > topLogo.top + 50){
-		$('.logo-inner').addClass('fixed');
-	}else{
-		$('.logo-inner').removeClass('fixed');
+$('body').one('mousewheel  touchmvoe',function(e){	
+
+	if(!scrolled.is){
+		e.stopPropagation();
+		e.preventDefault();
 	}
 	scrollFront();
 
