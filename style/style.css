@@ -258,9 +258,9 @@ hr { margin-top: 18px; margin-bottom: 18px; border: 0; border-top: 1px solid #ee
 
 .logo-wrap { position: relative; z-index: 12; height: 75px; }
 
-.logo-inner { text-align: center; -webkit-transition: all linear 0.2s; -o-transition: all linear 0.2s; transition: all linear 0.2s; }
+.logo-inner { z-index: 20; text-align: center; width: 100%; left: 0; top: 0; -webkit-transition: all linear 0.2s; -o-transition: all linear 0.2s; transition: all linear 0.2s; }
 
-.logo-inner.fixed { position: fixed; z-index: 20; top: 0; left: 0; width: 100%; background: #333E48; }
+.logo-inner.fixed { position: fixed; background: #333E48; }
 .logo-inner.fixed .logo-link { -webkit-transform: scale(0.7); -ms-transform: scale(0.7); -o-transform: scale(0.7); transform: scale(0.7); }
 
 @media (min-width: 1200px) { .logo-link { width: 300px; height: 92px; background-size: 300px 92px; }
