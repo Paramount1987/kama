@@ -41,7 +41,7 @@ var scrollFront = function(e){
 		}
 };
 
-$('body').on('mousewheel  touchmvoe',function(e){	
+$('body').on('mousewheel  touchmove',function(e){	
 	scrollFront();
 
 	if(!scrolled.is){
