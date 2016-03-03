@@ -51,5 +51,9 @@ $(document).scroll(function(){
 
 });
 $(".down-page").click(function(){scrollFront();});
-
+/////////////////////////////////////////////////////set for mobile height
+if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
+	var heightViewport = window.innerHeight;
+ 	$(".front-main").css('height', heightViewport + " !important");
+}
 });

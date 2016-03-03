@@ -250,7 +250,7 @@ hr { margin-top: 18px; margin-bottom: 18px; border: 0; border-top: 1px solid #ee
 
 .QLoader { background-color: #F7323F; z-index: 12; height: 6px; margin-top: -3px; }
 
-.front-main { position: relative; display: table; width: 100%; height: 100%; background: #333E48; color: #fff; }
+.front-main { position: relative; display: table; width: 100%; height: 100%; min-height: 380px; background: #333E48; color: #fff; }
 
 .front-content { position: relative; z-index: 8; display: table-cell; vertical-align: middle; text-align: center; }
 
@@ -258,7 +258,7 @@ hr { margin-top: 18px; margin-bottom: 18px; border: 0; border-top: 1px solid #ee
 
 .logo-wrap { position: relative; z-index: 12; height: 75px; }
 
-.logo-inner { -webkit-transition: all linear 0.2s; -o-transition: all linear 0.2s; transition: all linear 0.2s; }
+.logo-inner { text-align: center; -webkit-transition: all linear 0.2s; -o-transition: all linear 0.2s; transition: all linear 0.2s; }
 
 .logo-inner.fixed { position: fixed; z-index: 20; top: 0; left: 0; width: 100%; background: #333E48; }
 .logo-inner.fixed .logo-link { -webkit-transform: scale(0.7); -ms-transform: scale(0.7); -o-transform: scale(0.7); transform: scale(0.7); }
@@ -302,7 +302,7 @@ hr { margin-top: 18px; margin-bottom: 18px; border: 0; border-top: 1px solid #ee
 @media (min-width: 767px) { .middle .container { padding: 20px 10px 0 10px; } }
 .text-light { font-weight: 300; }
 
-.link-phone { color: #F7323F; }
+.link-phone { color: #F7323F; font-weight: 500; }
 .link-phone:hover, .link-phone:focus { text-decoration: none; color: #F7323F; }
 
 .btn-download { display: block; margin: 30px auto; width: 195px; line-height: 42px; border: 1px solid #fff; color: #fff; font-size: 15px; text-align: center; -webkit-transition: all linear 0.2s; -o-transition: all linear 0.2s; transition: all linear 0.2s; }
