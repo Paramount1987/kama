@@ -282,7 +282,7 @@ hr { margin-top: 18px; margin-bottom: 18px; border: 0; border-top: 1px solid #ee
 
 @media (min-width: 1200px) { .front-text { font-size: 16px; }
   .front-text:before { width: 54px; margin: 0 0 0 -27px; } }
-.down-page { position: absolute; z-index: 10; bottom: 60px; left: 50%; width: 44px; height: 18px; margin: 0 0 0 -22px; background: url("../i/icons/sprite.svg") no-repeat; background-size: 200px 100px; background-position: 0 -63px; cursor: pointer; -webkit-animation: down-up 1.5s linear infinite; animation: down-up 1.5s linear infinite; }
+.down-page { position: absolute; z-index: 10; bottom: 50px; left: 50%; width: 44px; height: 18px; margin: 0 0 0 -22px; background: url("../i/icons/sprite.svg") no-repeat; background-size: 200px 100px; background-position: 0 -63px; cursor: pointer; -webkit-animation: down-up 1.5s linear infinite; animation: down-up 1.5s linear infinite; }
 
 @media (min-width: 1200px) { .down-page { bottom: 40px; } }
 @-webkit-keyframes down-up { 0% { -webkit-transform: translate(0, 0); -ms-transform: translate(0, 0); -o-transform: translate(0, 0); transform: translate(0, 0); }
