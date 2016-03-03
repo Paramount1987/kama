@@ -55,5 +55,7 @@ $(document).scroll(function(){
 	if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
 		var heightViewport = window.height;
 	 	$(".front-main").css('height', heightViewport);
+	 	$('.poster-video').css('display', 'block');
+	 	$('#video').css('display','none');
 	}
 });
