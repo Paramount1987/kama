@@ -294,9 +294,7 @@ hr { margin-top: 18px; margin-bottom: 18px; border: 0; border-top: 1px solid #ee
   100% { -webkit-transform: translate(0, 0); -ms-transform: translate(0, 0); -o-transform: translate(0, 0); transform: translate(0, 0); } }
 .video-wrapper { position: absolute; z-index: 1; top: 0; left: 0; right: 0; bottom: 0; overflow: hidden; }
 
-#video { position: absolute; z-index: 1; top: 50%; left: 50%; min-width: 100%; min-height: 100%; width: auto; height: auto; -moz-transform: translate(-50%, -50%); -ms-transform: translate(-50%, -50%); -webkit-transform: translate(-50%, -50%); transform: translate(-50%, -50%); background-size: cover; opacity: 0.15; filter: alpha(opacity=15); }
-
-.poster-video { position: absolute; z-index: 2; display: none; top: 0; left: 0; right: 0; bottom: 0; background: url("../i/kama-photo.png"); background-size: cover; }
+.poster-video { position: absolute; z-index: 2; top: 0; left: 0; right: 0; bottom: 0; background: url("../i/kama-photo.jpg") center; background-size: cover; }
 
 .middle { background: #333E48; color: #fff; }
 .middle .container { max-width: 630px; padding-top: 30px; }
