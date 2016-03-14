@@ -7,7 +7,7 @@ var run = {is: false};
 $(window).load(function(){
 	NProgress.done();
 	setTimeout("$('#loader-progress').fadeOut()",500);
-	// setTimeout("document.getElementById('video').play()",600);
+	setTimeout("document.getElementById('video').play()",600);
 
 });
 
@@ -54,7 +54,7 @@ $('body').on('mousewheel  touchmove',function(e){
 	if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
 		var heightViewport = window.innerHeight;
 	 	$(".front-main").css('height', heightViewport);
-	 	// $('.poster-video').css('display', 'block');
-	 	// $('#video').css('display','none');
+	 	$('.poster-video').css('display', 'block');
+	 	$('#video').css('display','none');
 	}
 });
